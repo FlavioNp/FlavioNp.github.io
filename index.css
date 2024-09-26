@@ -1,0 +1,46 @@
+body {
+    font-family: 'Roboto Mono', monospace; /* Fonte tecnológica */
+    background-color: #222; /* Cor de fundo escura */
+    color: #fff; /* Cor do texto clara */
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7); /* Navbar semitransparente */
+    border: none;
+    border-radius: 5px; /* Cantos arredondados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+}
+
+.navbar-nav > li > a {
+    transition: all 0.3s ease; /* Transição suave para links */
+}
+
+.navbar-nav > li > a:hover {
+    color: #00ff00; /* Cor neon ao passar o mouse */
+    text-shadow: 0 0 5px #00ff00; /* Efeito de brilho neon */
+}
+
+.hero-full-container {
+    background-attachment: fixed; /* Efeito paralaxe */
+    background-size: cover;
+}
+
+.hero-full-wrapper .text-content h1 {
+    font-size: 3em;
+    text-align: center;
+    animation: fadeIn 1s ease; /* Animação de fade in */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#typed {
+    animation: typing 2s steps(40, end); /* Animação de digitação */
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
