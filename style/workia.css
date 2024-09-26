@@ -1,33 +1,98 @@
-/* Estilos específicos para a página do Projeto Generative IA */
+/* Reset básico para padronização entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; 
+    line-height: 1.6; 
+    color: #e0e0e0; /* Cor de texto mais clara, do segundo snippet */
+    background-color: #222; /* Cor de fundo escura, mantida do primeiro snippet */
+}
+
+/* Cabeçalho (navbar) */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: #fff; 
+    padding: 1rem 0; 
+    border: 1px solid #4d4d4d; /* Borda sutil, do segundo snippet */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar-nav > li > a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease; 
+}
+
+.navbar-nav > li > a:hover {
+    color: #00ff00; 
+}
+
+/* Seção de Projetos */
+.section-container {
+    padding: 3rem 0; 
+}
 
 /* Imagem do Projeto */
 .img-responsive {
-    border: 2px solid #00ff00; /* Borda neon */
-    box-shadow: 0 0 10px #00ff00; /* Sombra neon */
-  }
-  
-  /* Card do Projeto */
-  .card-container {
-    background-color: #2d2d2d; /* Fundo mais escuro para contraste */
-    color: #e0e0e0; /* Cor de texto mais clara */
-    border: 1px solid #4d4d4d; /* Borda sutil */
-  }
-  
-  .card-container h1, .card-container h2, .card-container h3 {
-    color: #00ff00; /* Títulos em neon */
-  }
-  
-  .card-container strong {
-    color: #00ff00; /* Destaque em neon para palavras em negrito */
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; 
+    border: 2px solid #00ff00; /* Borda neon, do segundo snippet */
+    box-shadow: 0 0 10px #00ff00; /* Sombra neon, do segundo snippet */
+    margin-bottom: 2rem;
+}
+
+/* Card do Projeto */
+.card-container {
+    background-color: #2d2d2d; /* Fundo mais escuro, do segundo snippet */
+    color: #e0e0e0; 
+    border: 1px solid #4d4d4d; 
+    padding: 2rem;
+}
+
+.card-container h1, .card-container h2, .card-container h3 {
+    color: #00ff00; 
+}
+
+.card-container strong {
+    color: #00ff00; 
     font-weight: bold;
-  }
-  
-  .card-container ul {
-    list-style: disc inside; /* Marcadores de lista */
+}
+
+.card-container ul {
+    list-style: disc inside; 
     padding-left: 1.5em;
-  }
-  
-  /* Rodapé */
-  footer {
-    background-color: #000; /* Fundo preto */
-  }
+}
+
+.card-container li {
+    margin-bottom: 0.5rem;
+}
+
+.card-container blockquote {
+    border-left: 5px solid #007bff; 
+    padding-left: 1rem;
+    margin-top: 2rem;
+    font-style: italic;
+}
+
+.card-container blockquote small {
+    display: block;
+    text-align: right;
+    font-style: normal;
+    color: #666;
+}
+
+/* Rodapé */
+footer {
+    background-color: #000; /* Fundo preto, do segundo snippet */
+    color: #fff; 
+    padding: 1rem 0;
+}
