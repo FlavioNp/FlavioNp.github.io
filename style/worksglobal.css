@@ -1,0 +1,104 @@
+/* Reset básico para padronização entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Fonte moderna e legível */
+    line-height: 1.6; /* Espaçamento entre linhas para melhor leitura */
+    color: #333; /* Cor de texto com bom contraste */
+    background-color: #f5f5f5; /* Cor de fundo neutra */
+}
+
+/* Cabeçalho (navbar) */
+.navbar {
+    background-color: #222; /* Cor de fundo escura */
+    color: #fff; /* Cor do texto clara */
+    padding: 1rem 0; /* Espaçamento interno */
+    border-bottom: 1px solid #444; /* Linha sutil para delimitar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar-nav > li > a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Transição suave na cor */
+}
+
+.navbar-nav > li > a:hover {
+    color: #00ff00; /* Cor de destaque ao passar o mouse */
+}
+
+/* Seção de Projetos */
+.section-container {
+    padding: 3rem 0; /* Espaçamento vertical */
+}
+
+/* Imagem do Projeto */
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; /* Cantos arredondados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    margin-bottom: 2rem;
+}
+
+/* Card do Projeto */
+.card-container {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+
+.card-container h2 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #007bff; /* Cor de destaque para o título */
+}
+
+.card-container h3 {
+    font-weight: 500;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-container p {
+    margin-bottom: 1rem;
+}
+
+.card-container ul {
+    list-style: none; /* Remove marcadores da lista */
+    padding-left: 0;
+}
+
+.card-container li {
+    margin-bottom: 0.5rem;
+}
+
+.card-container blockquote {
+    border-left: 5px solid #007bff; /* Barra lateral colorida */
+    padding-left: 1rem;
+    margin-top: 2rem;
+    font-style: italic;
+}
+
+.card-container blockquote small {
+    display: block;
+    text-align: right;
+    font-style: normal;
+    color: #666;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
